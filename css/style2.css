@@ -58,30 +58,6 @@ footer::after {
 }
 
 
-/*buttons*/
-
-.button {
-	display: inline-block;
-	text-decoration: none;
-	padding: 12px 24px;
-	border-radius: 5px;
-	transition: all ease-in-out 200ms;
-}
-
-.button-blue {
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #0066b2;
-	padding: .5em 1.2em;
-	font-size: 1em;
-}
-
-.button:hover {
-	background-color: #0278D0;
-}
-
-
-
 /* ================================= 
   Header
 ==================================== */
@@ -101,6 +77,7 @@ header {
 	padding: 10px 20px;
 	z-index: 3;
 }
+
 
 #nav-bar {
 	width: 100%;
@@ -134,6 +111,7 @@ header {
 	color: #0066b2;
 	border-bottom: 2px solid #9ED6FF;
 }
+
 
 
 /*----- mobile menu -------- */
@@ -197,18 +175,8 @@ h1 {
 
 .banner-mobile {
 	background-image: url('../images/banner-bg-small.jpg');
-	padding: 5em 2em;
+	padding: 10em;
 	background-size: cover;
-}
-
-.banner-mobile h1 {
-	font-size: 2.4em;
-	color: #e4e4e4;
-	line-height: initial;
-}
-
-.banner-mobile .button-blue {
-	margin-top: 50px;
 }
 
 .slider {
@@ -216,38 +184,38 @@ h1 {
 }
 
 
+
 /* About Us Section
 ==================================== */
 
-#about {
+.about {
 	background-color: #005f7d;
 	background-color: #fff;
 	color: #898989;
 	font-size: 1em;
-	padding: 2em 0;
 }
 
 h1 {
 	font-size: 1.2em;
 	color: #4d4d4d;
+	padding: 1em 0;
 }
 
 
 /* Join Us Section
 ==================================== */
 
-#join-banner {
+.join-banner {
 	display: none;
 	background-image: url('../images/join-bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 85vh;
-	background-attachment: scroll;
-	background-color: rgba(0,0,0, .4);
+	padding: 10em 0;
+	height: 80vh;
+	background-attachment: fixed;
 }
 
-#join-banner .container {
+.join-banner .container {
 	width: 100%;
 	padding: 0;
 }
@@ -256,20 +224,7 @@ h1 {
 	background-image: url('../images/join-bg-small.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 200px;
-	background-color: rgba(0,0,0, .4);
-}
-
-.join-banner-mobile .container {
-	background-color: rgba(0,0,0,.1);
-	height: 100%;
-}
-
-.banner-title {
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 2.2em;
-	line-height: initial;
+	padding: 5em 0;
 }
 
 /* 
@@ -280,36 +235,43 @@ h1 {
 	font-family: 'Roboto';
 	font-weight: 300;
 	padding: 1em 0;
-	background-color: rgba(0,0,0, .6);
+	background-color: #0066b2;
 	color: #fff;
 }
 
-#services {
+.services {
 	background-color: #0f273c;
 	color: #fff;
 }
 
+
  .services-items {
-	padding: 1em;
+	padding: 2em;
+	/*padding: 10em 0;*/
 	border-bottom: 1px solid #0e4b5f;
+	/*height: 1em;
+	overflow: hidden;*/
 }
 
-.services-subtitle {
+.services-subtitle{
 	text-transform: uppercase;
 	font-size: 1em;
 }
 
  .services-desc {
-	line-height: normal;
+	/*margin-top: 100px;*/
+	max-width: 90%;
 	margin: 0 auto;
 	font-size: .8em;
 }
 
 .services-bar {
 	width: 5em;
+	/*height: 3px;*/
 	height: 1px;
 	margin: 6px 0;
 	background-color: #777474;
+	/*margin: 30px auto;*/
 	margin: 10px auto;
 }
 
@@ -317,10 +279,11 @@ h1 {
 	text-align: center;
 	margin: 0 auto;
 	width: 20%;
+	/*margin-top: -13%;*/
 }
 
 .icon img {
-	max-width: 80%;
+	max-width: 90%;
 	display: block;
 	margin: auto;
 }
@@ -482,6 +445,7 @@ footer p {
 }
 
 .email-input:focus {
+	/*border: 1px solid #E3FAFD;*/
 	box-shadow: 0 0 2px #FFFFFF;
 	background-color: #DAF5FC;
 }
@@ -526,20 +490,11 @@ footer p {
 
 @media (min-width: 768px) {
 
-	h1 {
+	h1{
 		font-weight: 300;
 		font-size: 1.8em;
 		text-align: center;
-		padding-bottom: 1.5em;
 	}
-
-
-	/* --- buttons --- */
-
-	.button-blue {
-		font-size: 1.1em;
-	}
-
 
 	/*--- Navigation----- */
 
@@ -674,10 +629,24 @@ footer p {
 		display: inline-block;
 	}
 
-	
-    /* ----- About ----- */
-	#about {
-		padding: 6em 0;
+	.banner-title {
+		text-transform: uppercase;
+		color: #e4e4e4;
+	}
+
+	/*buttons*/
+
+	.button {
+		display: inline-block;
+		text-decoration: none;
+		padding: 12px 24px;
+		border-radius: 5px;
+	}
+
+	.button-blue {
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #0066b2;
 	}
 
 
@@ -687,7 +656,7 @@ footer p {
 	  padding: 1em 0;
 	 }
 
-	#services {
+	.services {
 		background-image: url('../images/services-bg.jpg');
 		background-size: cover;
 		background-position: center;
@@ -695,14 +664,18 @@ footer p {
 		background-color: transparent;
 	}
 
-	#services .container {
+	.services .container {
 		max-width: 100%;
-		display: flex;
-		flex-flow: row wrap;
+		/*display: flex;*/
 		
 	}
 
+	#services .container .flex-container {
+		flex-flow: row wrap;
+	}
+
 	.services-items {
+		flex-flow: 1;
 		width: 33.3333334%;
 		border:  1px solid rgba(114, 140, 148, 0.7);
 		background-color: rgba(0, 0, 0, 0.3);
@@ -714,15 +687,18 @@ footer p {
 
 	/*--- Schedule Section ----- */
 
-	#schedule {
+	.schedule {
 		text-align: left;
-		padding: 5em;
+	}
+
+	.schedule .container {
+		padding-right: 0;
 	}
 
 	.news {
 		float: left;
 		width: 46%;
-		margin-right: 8%;
+		margin-right: 5%;
 	}
 
 	.news:nth-child(2n + 1) {
@@ -789,10 +765,6 @@ footer p {
 
 
 @media (min-width: 1024px) {
-
-	h1 {
-		font-size: 2.5em;
-	}
 	
 
 	p {
@@ -808,7 +780,7 @@ footer p {
 
 	}
 
-	#about-subtitle {
+	.about-subtitle {
 		font-size: 2.3em;
 	}
 
@@ -822,8 +794,6 @@ footer p {
 	.banner-title {
 	  font-size: 5em;
 	  margin: 15px;
-	  padding-top: 2em;
-	  padding-bottom: 1em;
 	}
 
 	/* ----- Slider -----  */
@@ -833,21 +803,13 @@ footer p {
 	}
 
 	.slide-content h1 {
-		font-size: 5em;	
-		padding-top: 30px;
-		padding-bottom: 1em;
+		font-size: 4em;	
 	}
 
 	/* ----- Join Banner -----  */
 
-	#join-banner {
+	.join-banner {
 		display: block;
-		background-attachment: fixed;
-	}
-
-	#join-banner .container {
-		background-color: rgba(0,0,0, .1);
-		height: 100%;
 	}
 
 	.join-banner-mobile {
@@ -858,14 +820,16 @@ footer p {
 	/*--- Services Section ----- */
 
 	#services .container {
-		padding: 2em 8em;
+		padding: 4em;
 	}
 
 	.services-items {
-		padding: 4em 0;
+		padding: 7em 0;
 		border-top: 0;
-		overflow: hidden;
-		height: 180px;
+	}
+
+	.services-subtitle {
+		font-size: 1.4em;
 	}
 
 	.services-bar {
@@ -880,28 +844,25 @@ footer p {
 	}
 
 	.services-desc {
-		position: relative;
-		width: 80%;
+		position: absolute;
+		font-size: 0.9em;
 		font-weight: 300;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		top: 50px;
+		padding: 0 2em;
 		transform: translateY(100%);
 	}
 
 	.icon {
 		width: 20%;
-		margin-top: -5%;
+		margin-top: -13%;
 		transform: translateY(-3px);
 	}	
 
-	.icon img {
-		max-width: 60%;
-	}
-
 	.services-items:hover {
 		background-color: #292929;
+		/*background-color: #012351;*/
 	}
 
 	.services-items:hover .icon {
@@ -909,39 +870,29 @@ footer p {
 	}
 
 	.services-items:hover .services-subtitle {
-		transform: translateY(-65%);
+		transform: translateY(-100%);
 	}	
 
 	.services-items:hover .services-bar {
-		transform: translateY(-45%);
+		transform: translateY(-825%);
 		width: 0;
 	}
 
 	.services-items:hover .services-desc {
-		transform: translateY(-85px);
+		transform: translateY(-25px);
 	}
 
 	/*--- Schedule Section ----- */
 
-	#schedule h1 {
-		padding: 2em 0;
-	}
-
 	.news {
-		margin-bottom: 6%;
+		margin-bottom: 2%;
 	}
 
 	.class-photo {
-		float: left;
-		width: 36%;
+		float:left;
 		width: auto;
 		margin-top: 0;
 		margin-right: 2%;
-	}
-
-	.class-desc {
-		float: right;
-		width: 60%;
 	}
 
 	.class-desc h2 {
@@ -957,8 +908,6 @@ footer p {
 	.class-desc p {
 		width: 95%;
 		margin: 0;
-		font-size: .9em;
-		line-height: 1.6em;
 	}
 
 	/*--- Instructors Section ----- */

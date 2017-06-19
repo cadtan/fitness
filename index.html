@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gym</title>
+	<title>Pulse Fitness Club</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,10 @@
 </header>
 
 <section id="top" class="main-banner clearfix">
-	<div class="banner-mobile"></div>
+	<div class="banner-mobile">
+		<h1 >Get Fit &bull; Stay Healthy</h1>
+		<a href="#" class="button button-blue">TRY A FREE CLASS</a>	
+	</div>
 	
 	<!-- Hidden on mobile -->
 	<div class="slideContainer clearfix">
@@ -68,7 +71,7 @@
 </section>
 	
 
-<section id="about" class="about">
+<section id="about">
 	<div class="container">
 		<h1>ABOUT</h1>
 		<p>
@@ -78,7 +81,7 @@
 </section>
 
 <!-- Hidden on mobile -->
-<section class="join-banner parallax">
+<section id="join-banner" class="parallax">
 	<div class="container">
 		<h1 class="banner-title">New Member 20% Off</h1>
 		<a href="#" class="button button-blue">Join now</a>	
@@ -92,78 +95,80 @@
 	</div>
 </section>
 
-<section id="services" class="services clearfix">
+<section id="services" class="clearfix">
 	<h1 class="services-title">OUR SERVICES</h1>
 	<!-- Peronal training -->
-	<div class="services-items">
+	<div class="container">
+		<div class="services-items">
+				<div class="icon">
+					<img src="images/dumbbell.svg" alt="">
+				</div>
+				<h2 class="services-subtitle">Personal Training</h2>	
+				<div class="services-bar"></div>
+				<div class="services-desc">				
+					Our certified personal trainers create the perfect programs to help you reach your goals. 
+				</div>
+		</div>
+		<!-- Weight Loss -->
+		<div class="services-items">
 			<div class="icon">
-				<img src="images/dumbbell.svg" alt="">
+				<img src="images/weight.svg" alt="">
 			</div>
-			<h2 class="services-subtitle">Personal Training</h2>	
+			<h2 class="services-subtitle">Weight Loss</h2>	
 			<div class="services-bar"></div>
 			<div class="services-desc">				
-				Our certified personal trainers create the perfect programs to help you reach your goals. 
+				Restore, reset and refresh. We promise it’ll feel ohm-azing.
 			</div>
-	</div>
-	<!-- Weight Loss -->
-	<div class="services-items">
-		<div class="icon">
-			<img src="images/weight.svg" alt="">
-		</div>
-		<h2 class="services-subtitle">Weight Loss</h2>	
-		<div class="services-bar"></div>
-		<div class="services-desc">				
-			Restore, reset and refresh. We promise it’ll feel ohm-azing.
-		</div>
-	</div>	
-	<!-- Indoor cycling -->
-	<div class="services-items">
-		<div class="icon">
-			<img src="images/bicycle.svg" alt="">
-		</div>
-		<h2 class="services-subtitle">Indoor Cycling</h2>
-		<div class="services-bar"></div>
-		<div class="services-desc">				
-			Ready for the ride of your life? We have Road Rides, Rhythm Rides &amp; Remixed Rides.
 		</div>	
-	</div>
-	<!-- yoga -->
-	<div class="services-items">
-		<div class="icon">
-			<img src="images/yoga.svg" alt="">
+		<!-- Indoor cycling -->
+		<div class="services-items">
+			<div class="icon">
+				<img src="images/bicycle.svg" alt="">
+			</div>
+			<h2 class="services-subtitle">Indoor Cycling</h2>
+			<div class="services-bar"></div>
+			<div class="services-desc">				
+				Ready for the ride of your life? We have Road Rides, Rhythm Rides &amp; Remixed Rides.
+			</div>	
 		</div>
-		<h2 class="services-subtitle">Yoga</h2>
-		<div class="services-bar"></div>
-		<div class="services-desc">				
-			Our programs provide you with opportunities for deep opening of body, mind and spirit.
-		</div>	
-	</div>
-	<!-- cardio -->
-	<div class="services-items">
-		<div class="icon">
-			<img src="images/cardiogram.svg" alt="">
+		<!-- yoga -->
+		<div class="services-items">
+			<div class="icon">
+				<img src="images/yoga.svg" alt="">
+			</div>
+			<h2 class="services-subtitle">Yoga</h2>
+			<div class="services-bar"></div>
+			<div class="services-desc">				
+				Our programs provide you with opportunities for deep opening of body, mind and spirit.
+			</div>	
 		</div>
-		<h2 class="services-subtitle">Cardio Workout</h2>
-		<div class="services-bar"></div>
-		<div class="services-desc">				
-			Get grooving and moving as you follow the beat and feel the burn. Come channel your inner dance star!
-		</div>	
-	</div>
-	<!-- zumba -->
-	<div class="services-items">
-		<div class="icon">
-			<img src="images/dancer.svg" alt="">
+		<!-- cardio -->
+		<div class="services-items">
+			<div class="icon">
+				<img src="images/cardiogram.svg" alt="">
+			</div>
+			<h2 class="services-subtitle">Cardio Workout</h2>
+			<div class="services-bar"></div>
+			<div class="services-desc">				
+				Get grooving and moving as you follow the beat and feel the burn. Come channel your inner dance star!
+			</div>	
 		</div>
-		<h2 class="services-subtitle">Zumba</h2>
-		<div class="services-bar"></div>
-		<div class="services-desc">				
-			Get ready to muscle up for a full-blown body workout that will get you pumped in the sweaty spirit.
-		</div>	
+		<!-- zumba -->
+		<div class="services-items">
+			<div class="icon">
+				<img src="images/dancer.svg" alt="">
+			</div>
+			<h2 class="services-subtitle">Zumba</h2>
+			<div class="services-bar"></div>
+			<div class="services-desc">				
+				Get ready to muscle up for a full-blown body workout that will get you pumped in the sweaty spirit.
+			</div>	
+		</div>
 	</div>
 </section>
 
 <!-- Upcoming Classes Section -->
-<section id="schedule" class="schedule">
+<section id="schedule">
 	<div class="container clearfix">
 		<h1>UPCOMING SCHEDULE</h1>
 		<div class="news clearfix">
@@ -205,19 +210,19 @@
 </section>
 
 <!-- Instructors Section -->
-<section id="instructors" class="instructors clearfix">
-		<h1>Meet Our Instructors</h1>
+<section id="instructors" class="clearfix">
+		<h1>MEET OUR INSTRUCTORS</h1>
 		<div id="tab-1" class="tab-content current clearfix">
 			<div class="photo"></div>
 			<div class="instructor-desc">
-				Our personal trainers are fitness professionals that will work with you one-on-one, or in a group setting. The right personal trainer will educate you about health, exercise and nutrition - they will get you on the right track to better health, strength and a better physique.
+				Our personal trainers are fitness professionals that will work with you one-on-one, or in a group setting. The right personal trainer will educate you about health, exercise and nutrition.
 			</div>
 		</div>
 
 		<div id="tab-2" class="tab-content clearfix">
 			<div class="photo"></div>
 			<div class="instructor-desc">
-				I love teaching Zumba classes because Zumba is for everyone, and every class feels like a party! I am inspired by beginning dancers and folks boldly embarking on their fitness journey.  I am energized by The Fit, The Fancy and The Fierce who add their own brand of sass, style and power to my choreography.
+				I love teaching Zumba classes because Zumba is for everyone, and every class feels like a party! I am energized by The Fit, The Fancy and The Fierce who add their own brand of sass, style and power to my choreography.
 			</div>
 		</div>
 
@@ -228,20 +233,22 @@
 			</div>
 		</div>
 
-		<div class="tab current" data-tab="tab-1">
-			<h3>Lindsay Mills &amp; Chris Mattews </h3>
-			<p>Personal Trainer</p>
-		</div>
-
-		<div class="tab" data-tab="tab-2">
-			<h3>Casey Kelso </h3>
-			<p>Zumba Instructor</p>
-		</div>
-
-		<div class="tab" data-tab="tab-3">
-			<h3>Adrienne Landau </h3>
-			<p>Yoga Instructor</p>
-		</div>
+		<div class="flex-container">
+			<div class="tab current" data-tab="tab-1">
+				<h3>Lindsay Mills &amp; Chris Mattews </h3>
+				<p>Personal Trainer</p>
+			</div>
+			
+			<div class="tab" data-tab="tab-2">
+				<h3>Casey Kelso </h3>
+				<p>Zumba Instructor</p>
+			</div>
+			
+			<div class="tab" data-tab="tab-3">
+				<h3>Adrienne Landau </h3>
+				<p>Yoga Instructor</p>
+			</div>
+</div>
 </section>
 
 <!-- Footer Section -->
